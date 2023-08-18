@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        Dashboard
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="minileft">
+            <button>☰</button>
+            <i class="fa fa-home " id="icons"></i><br>
+            <i class="fa fa-laptop " id="icons"></i><br>
+            <i class="fa fa-mobile-phone " id="icons"></i><br>
+            <i class="fa fa-bars" id="icons"></i><br>
+        </div>
+        <div id="left" class="open1">
+            <button class="button" onClick="closess()">☰</button>
+            <div style="width: 100%; display: flex;">
+                <img src="profile.png" class="Profileimage">
+            </div>
+            <h4 style="text-align: center; margin: 0;">Vijay</h4>
+            <h6 style="text-align: center; margin-top: 5px; margin-bottom: 5px;">HR</h6>
+            <hr>
+            <div class="leftprofile">
+                <img class="plusadmin" src="plusadmin.png">
+                <p class="plusadmin">Plus Admin</p>
+            </div>
+            <p style="font-size: x-small; padding-left: 20%; color:lightblack;">Responsive dashboard</p>
+            <input type="text" placeholder="Search" id="searchbox">
+            <ul class="siderbarmain" style="padding: 0;">
+                <div id="sidebarhome" class="hover">
+                    <i class="fa fa-home " id="icons"></i>
+                    <li class="sidebar1 ">Home</li><br><br>
+                </div>
+                <br><br>
+                <div id="sidebar" class="hover">
+                    <i class="fa fa-laptop " id="icons"></i>
+                    <li class="sidebar1 ">Attendance</li>
+                </div>
+                <br><br>
+                <div id="sidebar" class="hover">
+                    <i class="fa fa-mobile-phone " id="icons"></i>
+                    <li class="sidebar1 ">Leave</li><br><br>
+                </div>
+                <br><br>
+                <div id="sidebar" class="hover">
+                    <i class="fa fa-bars" id="icons"></i>
+                    <li class="sidebar1">To do</li><br><br>
+                </div>
+                <br><br>
+                <div id="sidebar" class="hover">
+                    <i class="fa fa-laptop" id="icons"></i>
+                    <li class="sidebar1 ">Finances</li>
+                </div>
+                <br><br>
+                <div id="sidebar" class="hover">
+                    <i class="fa fa-bullseye" id="icons"></i>
+                    <li class="sidebar1 h">Organisation</li><br><br>
+                </div>
+                <br><br>
+                <div id="sidebar" class="hover">
+                    <i class="fa fa-home" id="icons"></i>
+                    <li class="sidebar1">Home</li><br><br>
+                </div>
+                <br><br>
+                <div id="sidebar" class="hover">
+                    <i class="fa fa-laptop" id="icons"></i>
+                    <li class="sidebar1 ">Attendance</li>
+                </div>
+                <br><br>
+                <div id="sidebar" class="hover">
+                    <i class="fa fa-mobile-phone " id="icons"></i>
+                    <li class="sidebar1 ">Leave</li><br><br>
+                </div>
+
+            </ul>
+        </div>
+        <div id="right">
+            <header class="header">
+
+                <div style=" padding-left: 4%; display: flex; align-items: center;">
+                    <i class="fa fa-envelope " style="padding-left: 10px; color: white;"></i>
+                    <i class="fa fa-bell-o " style="padding-left: 40px; color:white;"></i>
+                </div>
+                <div class="list">
+                    <ul style="display: flex; list-style-type: none; margin: 0%;">
+                        <li class="headerright">Candidates</li>
+                        <li class="headerright"> <button class="recruiters">recuriters</button></li>
+                    </ul>
+                    <select class="selectheader" class="hover">
+                        <option>English</option>
+                        <option> French</option>
+                    </select>
+                    <i class="fa fa-home" style="color: white; size: 16px;"></i>
+                </div>
+            </header>
+            <div class="rightmain">
+                <div class="right0">
+                    <div class="right0child1">
+                        <h3 id="h3">HR Dashboard </h3>
+                        <p id="h6">Here are your important tasks,updates and alerts.</p>
+                    </div>
+                    <div>
+                        <p class="date">Date: 23 jan 2020, Tuesday Time: 06:29:48 PM</p>
+                    </div>
+                </div>
+                <div class="right1">
+                    <div style="display: flex;align-items: center;">
+                        <img src="group.png" class="group">
+                    </div>
+                    <hr style="margin: 0; border-color: lightgrey;">
+                    <div class="right1right">
+                        <h4 class="hiring">Hiring 13 candidates in a month!</h4>
+                        <p class="humanresources" style="color: #6c7293;"> In this human resources
+                            dashboard Example
+                            we can see a variety of key<br> performance for the HR department.</p>
+                    </div>
+                    <div>
+                        <button id="focus">Focus
+                            on your mission while we focus on our Hr</button>
+                    </div>
+                </div>
+
+                <div class="right2">
+                    <div class="right2childs">
+                        <h4 style="font-size: 18px; margin: 0;">
+                            PayRoll
+                        </h4>
+                        <p style="margin: 0;">
+                            29 calendar Days
+                        </p>
+
+                    </div>
+                    <hr class="line">
+                    <div class="right2childs">
+                        <h4 id="system"> Total Employees</h4>
+                        <div style="display: flex;">
+                            <h2>130 </h2>
+                            <h3 style="color: #46c35f; margin: 0">+2</h3>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="right2childs">
+                        <h4 id="system"> Working days</h4>
+                        <h2 s>24</h2>
+                    </div>
+                    <hr>
+                    <div class="right2childs">
+                        <h4 id="system"> PayRoll Processed</h4>
+                        <h2>121/130</h2>
+                    </div>
+                </div>
+
+                <div class="right3">
+
+                    <div class="right3child0" >
+
+                        <div style=" flex-direction: row;  " class="right3childs2">
+                            <h2 class="timingdetails">Timing Details</h2>
+                            <h2 class="days">S M T W T F S</h2>
+                        </div>
+                        <hr>
+                        <div style="flex-direction: row; " class="right3childs1">
+                            <div>
+                                <p class="timingdetails">Today (9.00 AM - 6.00 PM)</p>
+                                <hr class="timingdetails" style="border: solid 5px #00d284;">
+                                <p class="timingdetails">Duration : 9.00 Hrs</p>
+                            </div>
+                            <div>
+                                <p>Today</p>
+                                <hr style="border: solid 5px #00d284;">
+                                <p class="days">Break : 60 Mins</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; flex: 1; ">
+                        <div class="right2childs">
+                            <h2 style="margin-top: 10px; margin-bottom: 17px; font-size: 16px;">
+                                Attendance Details
+                            </h2>
+                            <div class="right3child1">
+                                <i class='far fa-user-circle' style="color: blue;"></i>
+                                <p style="margin: 0px;">Me </p>
+                            </div>
+                            <div class="right3child1">
+                                <i class='fas fa-user-friends' style="color: blue;"></i>
+                                <P style="margin: 0px;">My Team</P>
+                            </div>
+                        </div>
+                        <div class="right3childs2">
+                            <p class="right3child22">5.00 hrs(ON TIME ARRIVAL)</p>
+                            <P class="right3child22">7.42 hrs(ON TIME ARRIVAL)</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="right4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function closess() {
+            var a = document.getElementById("left");
+            if (a.className == "open1") {
+                a.className = "close1";
+            } else {
+                a.className = "open1";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
