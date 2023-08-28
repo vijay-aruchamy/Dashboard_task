@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-        Dashboard2
+        Dashboard
     </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,15 +21,14 @@
 <body>
 
     <div class="main">
-        <div class="minileft">
-            <button>☰</button>
+        <button class="button" onClick="closess()">☰</button>
+        <div id="minileft">
             <i class="fa fa-home " id="icons"></i><br>
             <i class="fa fa-laptop " id="icons"></i><br>
             <i class="fa fa-mobile-phone " id="icons"></i><br>
             <i class="fa fa-bars" id="icons"></i><br>
         </div>
         <div id="left" class="open1">
-            <button class="button" onClick="closess()">☰</button>
             <div style="width: 100%; display: flex;">
                 <img src="profile.png" class="Profileimage">
             </div>
@@ -220,8 +219,10 @@
             var a = document.getElementById("left");
             if (a.className == "open1") {
                 a.className = "close1";
+                document.getElementById("minileft").style.display="block";
             } else {
                 a.className = "open1";
+                document.getElementById("minileft").style.display="none";
             }
         }
 

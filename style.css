@@ -261,8 +261,8 @@ h6 {
     .right1 {
         flex-direction: column;
         width: 100%;
-        height: 100%;
-        overflow-y: auto;
+        height: fit-content;
+         overflow-y: auto; 
     }
     .plusadmin
     {
@@ -279,7 +279,7 @@ h6 {
     }
 
     .right3 {
-        height: 100%;
+        height: fit-content;
         width: 100%;
         flex-direction: column;
         overflow-y: auto;
@@ -287,7 +287,7 @@ h6 {
     }
 
     .right2 {
-        height: 100%;
+        height: fit-content;
         width: 100%;
         flex-direction: column;
         overflow-y: auto;
@@ -431,11 +431,16 @@ h6 {
     height: 20px;
 }
 
-.minileft {
+#minileft {
     margin-top: 55px;
     width: 70px;
     font-size: 40px;
     border: solid 1px black;
     align-items: center;
-    display: none;
+     display: none; 
+}
+#minileftbutton
+{
+    right: 0;
+    top: 0;
 }
