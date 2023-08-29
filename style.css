@@ -30,6 +30,23 @@ h2{
     font-family: 'Open Sans'
 
 }
+#profilename
+{
+    text-align: center;
+    margin: 0;
+}
+#profession
+{
+    text-align: center; 
+    margin-top: 5px;
+     margin-bottom: 5px;
+}
+#responsivetext
+{
+    font-size: x-small; 
+    padding-left: 20%; 
+    color:lightblack;
+}
 
 
 
@@ -37,7 +54,9 @@ h2{
     display: flex;
     align-items: center;
     padding-left: 10px;
-
+    padding-bottom: 10px;
+    padding-top: 10px;
+  
 }
 
 #sidebarhome {
@@ -45,14 +64,19 @@ h2{
     align-items: center;
     background-color: blue;
     padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 
 }
 
 .sidebar1 {
     list-style-type: none;
     padding-left: 10px;
+    font-size: 14px;
 
+  
 }
+
 
 #icons {
     font-size: 18px;
@@ -65,7 +89,7 @@ h2{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    width: 20%;
+    width: 30%;
     transition: 0.2s;
 }
 
@@ -78,13 +102,19 @@ h2{
 }
 
 .header {
-    background-color: #0033c4;
+    background-color: #012eaa;
     height: 10%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+}
+.headerleft
+{
+    padding-left: 4%;
+     display: flex;
+      align-items: center;
 }
 
 #envelope {
@@ -141,13 +171,26 @@ h2{
     border: solid 1px lightgray;
 
 }
-
+.right1hr
+{
+    height: 50%;
+    border: 1px solid lightgray;
+    margin-top: 3%;
+}
+.right1rightchild
+{
+  padding-left: 15px;
+}
 .right2 {
     flex: 2;
     background-color: white;
     margin: 15px;
     display: flex;
     border: solid 1px lightgray;
+}
+.number121
+{
+  display: flex;
 }
 
 .right3 {
@@ -234,8 +277,10 @@ h2{
 
     background-color: white;
     border: 1px solid lightgrey;
-    color: blue;
-    margin-top: 35px;
+    color: rgb(16, 16, 238);
+    margin-top: 25px;
+    font-size: 12px;
+    margin-left:10px ;
 
 
 }
@@ -282,7 +327,7 @@ h2{
         flex-direction: column;
         width: 100%;
         height: fit-content;
-         overflow-y: auto; 
+        
     }
     .plusadmin
     {
@@ -353,28 +398,23 @@ h2{
 
 .group {
     height: 100px;
-    display: inherit;
-    margin-left: auto;
-    margin-right: auto;
+    
+    border-right: 1px solid ;
 }
 
 .Profileimage {
     height: 100px;
     padding-top: 70px;
-    padding-left: 60px;
+    padding-left: 50px;
 }
 
 
 
-.leftprofile {
-    display: flex;
-    font-size: 25px;
-    margin: 0;
-}
 
 .plusadmin {
     margin: 0;
     margin-top: 7px;
+    height: 30px;
 }
 
 .right3child0 {
@@ -404,7 +444,7 @@ h2{
     color: aliceblue;
     display: block;
     height: 16px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .right3childs2 {
@@ -425,6 +465,7 @@ h2{
 .hiring {
     font-size: 18px;
     font-weight: 600;
+    padding-top: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -442,8 +483,8 @@ h2{
 }
 
 .right1right {
-    padding-top: 3%;
-    padding-left: 20px;
+     
+     display: flex;
 }
 
 #searchbox {

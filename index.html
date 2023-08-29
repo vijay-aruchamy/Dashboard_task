@@ -32,67 +32,63 @@
             <div style="width: 100%; display: flex;">
                 <img src="profile.png" class="Profileimage">
             </div>
-            <h4 style="text-align: center; margin: 0;">Vijay</h4>
-            <h6 style="text-align: center; margin-top: 5px; margin-bottom: 5px;">HR</h6>
+            <h4 id="profilename">Vijay</h4>
+            <h6 id="profession">HR</h6>
             <hr>
-            <div class="leftprofile">
-                <img class="plusadmin" src="plusadmin.png">
-                <p class="plusadmin">Plus Admin</p>
-            </div>
-            <p style="font-size: x-small; padding-left: 20%; color:lightblack;">Responsive dashboard</p>
+            <img class="plusadmin" src="plusadmin.png">
+            <p id="responsivetext">Responsive dashboard</p>
             <input type="text" placeholder="Search" id="searchbox">
             <ul class="siderbarmain" style="padding: 0;">
                 <div id="sidebarhome" class="hover">
                     <i class="fa fa-home " id="icons"></i>
-                    <li class="sidebar1 ">Home</li><br><br>
+                    <li class="sidebar1 ">Home</li>
                 </div>
-                <br><br>
+                
                 <div id="sidebar" class="hover">
                     <i class="fa fa-laptop " id="icons"></i>
                     <li class="sidebar1 ">Attendance</li>
                 </div>
-                <br><br>
+                
                 <div id="sidebar" class="hover">
                     <i class="fa fa-mobile-phone " id="icons"></i>
-                    <li class="sidebar1 ">Leave</li><br><br>
+                    <li class="sidebar1 ">Leave</li>
                 </div>
-                <br><br>
+                
                 <div id="sidebar" class="hover">
                     <i class="fa fa-bars" id="icons"></i>
-                    <li class="sidebar1">To do</li><br><br>
+                    <li class="sidebar1">To do</li>
                 </div>
-                <br><br>
+               
                 <div id="sidebar" class="hover">
                     <i class="fa fa-laptop" id="icons"></i>
                     <li class="sidebar1 ">Finances</li>
                 </div>
-                <br><br>
+                
                 <div id="sidebar" class="hover">
                     <i class="fa fa-bullseye" id="icons"></i>
-                    <li class="sidebar1 ">Organisation</li><br><br>
+                    <li class="sidebar1 ">Organisation</li>
                 </div>
-                <br><br>
+                
                 <div id="sidebar" class="hover">
                     <i class="fa fa-home" id="icons"></i>
-                    <li class="sidebar1">Home</li><br><br>
+                    <li class="sidebar1">Home</li>
                 </div>
-                <br><br>
+                
                 <div id="sidebar" class="hover">
                     <i class="fa fa-laptop" id="icons"></i>
                     <li class="sidebar1 ">Attendance</li>
                 </div>
-                <br><br>
+               
                 <div id="sidebar" class="hover">
                     <i class="fa fa-mobile-phone " id="icons"></i>
-                    <li class="sidebar1 ">Leave</li><br><br>
-                </div>
+                    <li class="sidebar1 ">Leave</li>
 
             </ul>
         </div>
         <div id="right">
             <header class="header">
 
-                <div style=" padding-left: 4%; display: flex; align-items: center;">
+                <div class="headerleft">
                     <i class="fa fa-envelope " style="padding-left: 10px; color: white;"></i>
                     <i class="fa fa-bell-o " style="padding-left: 40px; color:white;"></i>
                 </div>
@@ -119,20 +115,22 @@
                     </div>
                 </div>
                 <div class="right1">
-                    <div style="display: flex;align-items: center;">
+                    <div >
                         <img src="group.png" class="group">
                     </div>
-                    <hr style="margin: 0; border-color: lightgrey;">
+                    
+                    <div class="right1rightchild">
                     <div class="right1right">
                         <h4 class="hiring">Hiring 13 candidates in a month!</h4>
-                        <p class="humanresources" style="color: #6c7293;"> In this human resources
-                            dashboard Example
-                            we can see a variety of key<br> performance for the HR department.</p>
-                    </div>
-                    <div>
                         <button id="focus">Focus
                             on your mission while we focus on our Hr</button>
+                   
                     </div>
+                    <p class="humanresources" style="color: #6c7293;"> In this human resources
+                        dashboard Example
+                        we can see a variety of key<br> performance for the HR department.</p>
+                    </div> 
+                        
                 </div>
 
                 <div class="right2">
@@ -161,13 +159,16 @@
                     <hr class="line">
                     <div class="right2childs">
                         <h4 id="system"> PayRoll Processed</h4>
-                        <h2>121/130</h2>
+                        <div class="number121">
+                        <h2>121</h2>
+                        <p>/130</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="right3">
 
-                    <div class="right3child0" >
+                    <div class="right3child0">
 
                         <div style=" flex-direction: row;  " class="right3childs2">
                             <h2 class="timingdetails">Timing Details</h2>
@@ -187,7 +188,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div style="display: flex; flex: 1; ">
                         <div class="right2childs">
                             <h2 style="margin-top: 10px; margin-bottom: 17px; font-size: 16px;">
@@ -218,11 +219,11 @@
         function closess() {
             var a = document.getElementById("left");
             if (a.className == "open1") {
-                a.className="close1"
-                document.getElementById("minileft").style.display="block";
+                a.className = "close1"
+                document.getElementById("minileft").style.display = "block";
             } else {
                 a.className = "open1";
-                document.getElementById("minileft").style.display="none";
+                document.getElementById("minileft").style.display = "none";
             }
         }
 
