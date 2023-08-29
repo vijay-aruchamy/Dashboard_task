@@ -257,7 +257,7 @@ h2{
 }
 
 .close1 {
-    width: 0;
+    display: none;
     transition: 0.2s;
 
 }
