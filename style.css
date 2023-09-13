@@ -2,6 +2,7 @@ body {
     margin: 0px;
     font-family: 'Open Sans';
     font-size: 1rem;
+
 }
 
 p,
@@ -20,6 +21,12 @@ h2{
     font-weight: 600;
 }
 
+span{
+    font-size: smaller;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
 .main {
     margin-left: 0px;
     overflow: hidden;
@@ -27,7 +34,8 @@ h2{
     height: 100vh;
     width: 100%;
     display: flex;
-    font-family: 'Open Sans'
+    font-family: 'Open Sans';
+    
 
 }
 #profilename
@@ -59,10 +67,16 @@ h2{
   
 }
 
+.leftpara
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
 #sidebarhome {
     display: flex;
     align-items: center;
-    background-color: blue;
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -89,12 +103,13 @@ h2{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    width: 30%;
+    width: 20%;
     transition: 0.2s;
+    padding-left: 20px;
 }
 
 #right {
-    width: 100%;
+    width: 80%;
     height: 100%;
     overflow-y: auto;
     background-color: #f8f9fb;
@@ -102,17 +117,22 @@ h2{
 }
 
 .header {
-    background-color: #012eaa;
+    background-color: #042fa6;
     height: 10%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
+   
+  
 
 }
 .headerleft
 {
-    padding-left: 4%;
+    padding-left: 20px;
+    color: white;
+   gap: 20px;
      display: flex;
       align-items: center;
 }
@@ -155,6 +175,8 @@ h2{
 }
 
 .rightmain {
+    padding-left: 20px;
+    padding-right: 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -169,14 +191,10 @@ h2{
     overflow: hidden;
     flex: 2;
     border: solid 1px lightgray;
+    padding: 15px;
 
 }
-.right1hr
-{
-    height: 50%;
-    border: 1px solid lightgray;
-    margin-top: 3%;
-}
+
 .right1rightchild
 {
   padding-left: 15px;
@@ -187,6 +205,7 @@ h2{
     margin: 15px;
     display: flex;
     border: solid 1px lightgray;
+    padding: 20px;
 }
 .number121
 {
@@ -200,6 +219,7 @@ h2{
     display: flex;
     border: solid 1px lightgray;
       font-size: 12px;
+      padding: 20px;
 }
 
 .right4 {
@@ -263,13 +283,14 @@ h2{
 
 .button {
     background-color: rgb(255, 0, 0);
-    position: absolute;
+    /* position: absolute; */
     height: 10%;
     width: 50px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     font-size: large;
     border-color: white;
+    float: right;
 
 }
 
@@ -277,10 +298,12 @@ h2{
 
     background-color: white;
     border: 1px solid lightgrey;
-    color: rgb(16, 16, 238);
+    color: rgb(11, 11, 194);
     margin-top: 25px;
     font-size: 12px;
     margin-left:10px ;
+    font-weight: bold;
+    padding: 5px;
 
 
 }
@@ -399,16 +422,21 @@ h2{
 .group {
     height: 100px;
     
-    border-right: 1px solid ;
+    border-right: 1px solid lightgray;
 }
 
 .Profileimage {
-    height: 100px;
-    padding-top: 70px;
-    padding-left: 50px;
+    height: 90px;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
-
+.profilediv
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .plusadmin {
@@ -422,8 +450,17 @@ h2{
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
-    
-    border-right: 20px solid  #f8f9fb;
+}
+.timedate
+{
+    color: #6c7293;
+    font-weight: 200;
+    font-size: medium;
+}
+.date{
+    font-weight: bold;
+    /* gap: 15px; */
+
 }
 
 .right3child1 {
@@ -432,9 +469,15 @@ h2{
 }
 
 .headerright {
-    padding-right: 5px;
-    padding-left: 5px;
+    display: flex;
+    padding-right: 20px;
+    gap: 10px;
     color: white;
+}
+#headerhome
+{
+     font-size: 18px;
+    color: aliceblue;
 }
 
 .selectheader {
@@ -443,7 +486,7 @@ h2{
     border: none;
     color: aliceblue;
     display: block;
-    height: 16px;
+    
     font-size: 14px;
 }
 
@@ -479,6 +522,7 @@ h2{
     background-color: red;
     color: white;
     border: none;
+    border-radius: 2px;
     font-size: 16px;
 }
 
@@ -490,13 +534,14 @@ h2{
 #searchbox {
     margin-left: 7%;
     border: 0px;
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.299);
     border-radius: 20px;
-    height: 20px;
+    height: 30px;
+    padding-left: 30px;
+    width: 200px;
 }
 
 #minileft {
-    margin-top: 55px;
     width: 70px;
     font-size: 40px;
     border: solid 1px black;

@@ -21,23 +21,28 @@
 <body>
 
     <div class="main">
-        <button class="button" onClick="closess()">☰</button>
         <div id="minileft">
+            <button class="button" onClick="closess()">☰</button>
             <i class="fa fa-home " id="icons"></i><br>
             <i class="fa fa-laptop " id="icons"></i><br>
             <i class="fa fa-mobile-phone " id="icons"></i><br>
             <i class="fa fa-bars" id="icons"></i><br>
         </div>
         <div id="left" class="open1">
-            <div style="width: 100%; display: flex;">
+            <button class="button" onClick="closess()">☰</button>
+            <div class="profilediv">
                 <img src="profile.png" class="Profileimage">
             </div>
-            <h4 id="profilename">Vijay</h4>
-            <h6 id="profession">HR</h6>
+            <h5 id="profilename">Bartie Klein</h5>
+            <h5 id="profession">HR</h5>
             <hr>
             <img class="plusadmin" src="plusadmin.png">
             <p id="responsivetext">Responsive dashboard</p>
+            <div class="leftpara">
             <input type="text" placeholder="Search" id="searchbox">
+          
+            <span >TEMPLATE PAGES</span>
+            </div>
             <ul class="siderbarmain" style="padding: 0;">
                 <div id="sidebarhome" class="hover">
                     <i class="fa fa-home " id="icons"></i>
@@ -85,23 +90,22 @@
 
             </ul>
         </div>
+       
         <div id="right">
             <header class="header">
 
                 <div class="headerleft">
-                    <i class="fa fa-envelope " style="padding-left: 10px; color: white;"></i>
-                    <i class="fa fa-bell-o " style="padding-left: 40px; color:white;"></i>
+                    <i class="fa fa-envelope "></i>
+                    <i class="fa fa-bell-o "></i>
                 </div>
-                <div class="list">
-                    <ul style="display: flex; list-style-type: none; margin: 0%;">
-                        <li class="headerright">Candidates</li>
-                        <li class="headerright"> <button class="recruiters">recuriters</button></li>
-                    </ul>
+                <div class="headerright">
+                        <p >Candidates</p>
+                        <p > <button class="recruiters">Recuriters</button></p>
                     <select class="selectheader" class="hover">
                         <option>English</option>
                         <option> French</option>
                     </select>
-                    <i class="fa fa-home" style="color: white; size: 16px;"></i>
+                    <i class="fa fa-home" id="headerhome"></i>
                 </div>
             </header>
             <div class="rightmain">
@@ -111,7 +115,7 @@
                         <p id="h6">Here are your important tasks,updates and alerts.</p>
                     </div>
                     <div>
-                        <p class="date">Date: 23 jan 2020, Tuesday Time: 06:29:48 PM</p>
+                        <p class="date">Date: <span class="timedate">23 jan 2020, Tuesday</span> Time: <span class="timedate">06:29:48 PM</span> </p>
                     </div>
                 </div>
                 <div class="right1">
@@ -209,9 +213,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="right4">
-
-                </div>
             </div>
         </div>
     </div>
@@ -221,6 +222,7 @@
             if (a.className == "open1") {
                 a.className = "close1"
                 document.getElementById("minileft").style.display = "block";
+                document.getElementById('right').style.width="calc(100% - 70px)"
             } else {
                 a.className = "open1";
                 document.getElementById("minileft").style.display = "none";
