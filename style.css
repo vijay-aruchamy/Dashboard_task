@@ -148,16 +148,13 @@ span{
       align-items: center;
 }
 
-#envelope {
-    padding-top: 15px;
-    padding-left: 20px;
-}
 
-#bell {
-    padding-left: 30px;
-    padding-top: 15px;
-
-
+#headerbutton{
+    color:white;
+    background-color: #042fa6;
+    border: none;
+    font-size: medium;
+    display: none;
 }
 
 #h6 {
@@ -327,10 +324,6 @@ span{
     margin: 0;
 }
 
-.buttonheader {
-    display: none;
-}
-
 .hover:hover {
 
     background-color: rgb(12, 12, 244);
@@ -354,20 +347,17 @@ span{
 }
 
 @media screen and (max-width: 768px) {
-    /* .open1 {
-        width: 0;
-    }
-
-    .right1 {
-        flex-direction: column;
-        width: 100%;
-        height: fit-content;
-        
-    }
-    .plusadmin
+    #headerbutton
     {
-        height: 15px;
-    } */
+        display: block;
+    }
+    .button{
+        display: none;
+    }
+    #right
+    {
+        width: 100%;
+    }
 
 }
 
@@ -375,27 +365,34 @@ span{
 
     .right0 {
         flex-direction: column;
-        overflow-y: auto;
+        
+    }
+    .right1{
+        flex-direction: column;
+        height: fit-content;
+        
+
     }
 
     .right3 {
-        height: fit-content;
-        width: 100%;
         flex-direction: column;
-        overflow-y: auto;
+        height: fit-content;
+
+        
 
     }
 
+    
     .right2 {
-        height: fit-content;
-        width: 100%;
         flex-direction: column;
-        overflow-y: auto;
+        height: fit-content;
+        
+    }
+    .headerrightchild
+    {
+       visibility: hidden;
     }
 
-    .list {
-        display: none;
-    }
 
     .button {
         display: none;
@@ -485,6 +482,14 @@ span{
     gap: 10px;
     color: white;
 }
+
+.headerrightchild {
+    display: flex;
+    padding-right: 20px;
+    gap: 10px;
+    color: white;
+}
+
 #headerhome
 {
      font-size: 18px;

@@ -98,17 +98,20 @@
             <header class="header">
 
                 <div class="headerleft">
-                <button style="background-color:  #042fa6; border: none;"> <img id="imgresponse"src="Pasted image.png"></button>
+                <img id="imgresponse"src="Pasted image.png">
                     <i class="fa fa-envelope "></i>
                     <i class="fa fa-bell-o "></i>
                 </div>
                 <div class="headerright">
+                    <div class="headerrightchild">
                         <p >Candidates</p>
                         <p > <button class="recruiters">Recuriters</button></p>
                     <select class="selectheader" class="hover">
                         <option>English</option>
                         <option> French</option>
                     </select>
+                    </div>
+                    <button id="headerbutton" onclick="switchside()">☰</button>
                     <i class="fa fa-home" id="headerhome"></i>
                 </div>
             </header>
@@ -231,6 +234,23 @@
                 a.className = "open1";
                 document.getElementById("minileft").style.display = "none";
             }
+        }
+
+        function switchside()
+        {
+            let sidebar=document.getElementById("left");
+            if(sidebar.className=='close1')
+            {
+            sidebar.className='open1'
+
+            }
+            else
+            {
+            sidebar.className='close1'
+            console.log("enteringg")
+             document.getElementById('right').style.width='100%'
+            }
+
         }
 
     </script>
