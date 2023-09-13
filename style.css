@@ -74,6 +74,17 @@ span{
     padding-top: 10px;
 }
 
+.minilefticons
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#pastedimg
+{
+ padding-left: 15px; 
+}
 #sidebarhome {
     display: flex;
     align-items: center;
@@ -123,7 +134,7 @@ span{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+   position: sticky;
    
   
 
@@ -180,6 +191,7 @@ span{
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 
@@ -341,8 +353,8 @@ span{
     border: 1px solid  #f8f9fb;
 }
 
-@media screen and (max-width: 960px) {
-    .open1 {
+@media screen and (max-width: 768px) {
+    /* .open1 {
         width: 0;
     }
 
@@ -355,7 +367,7 @@ span{
     .plusadmin
     {
         height: 15px;
-    }
+    } */
 
 }
 
@@ -459,7 +471,6 @@ span{
 }
 .date{
     font-weight: bold;
-    /* gap: 15px; */
 
 }
 
@@ -544,12 +555,16 @@ span{
 #minileft {
     width: 70px;
     font-size: 40px;
-    border: solid 1px black;
-    align-items: center;
+     border-right: 1px solid lightgray;
      display: none; 
 }
 #minileftbutton
 {
     right: 0;
     top: 0;
+}
+
+#imgresponse
+{
+    background-color: #042fa6;
 }
