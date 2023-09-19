@@ -134,6 +134,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
     position: sticky;
 
 
@@ -168,7 +169,7 @@ span {
 }
 
 .right0 {
-    height: 70px;
+    margin: 10px;
     background-color: #f8f9fb;
     display: flex;
     font-family: "Open Sans", sans-serif;
@@ -197,15 +198,18 @@ span {
     background-color: white;
     border: 5px;
     margin: 10px;
-    overflow: hidden;
     flex: 2;
     border: solid 1px lightgray;
     padding: 15px;
+    border-radius: 4px;
 
 }
 
 .right1rightchild {
     padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .right2 {
@@ -215,6 +219,7 @@ span {
     display: flex;
     border: solid 1px lightgray;
     padding: 20px;
+    border-radius: 4px;
 }
 
 .number121 {
@@ -223,12 +228,21 @@ span {
 
 .right3 {
     flex: 2;
-    background-color: white;
     margin: 20px;
     display: flex;
-    border: solid 1px lightgray;
     font-size: 12px;
+    gap: 20px;
+}
+
+.right3 > div {
+    background-color: white;
+    border: solid 1px lightgray;
+    border-radius: 4px;
     padding: 20px;
+    display: flex;
+    
+    gap: 10px;
+
 }
 
 .right4 {
@@ -342,10 +356,9 @@ span {
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
-    border: 1px solid #f8f9fb;
 }
 
 @media screen and (max-width: 768px) {
@@ -355,9 +368,13 @@ span {
         display: none;
     }
 
+
+
     #headerbutton {
         display: block;
     }
+
+   
 
     .button {
         display: none;
@@ -374,33 +391,39 @@ span {
     #headerhome {
         display: none;
     }
+    
+    .right3childs1 {
+        gap: 15px;
+    }
 
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
+
+    .right1 {
+        flex-direction: column;
+        height: fit-content;
+        .group{
+            border: none;
+        }
+
+
+    }
+
 
 
     #right {
         width: calc(100%-70px);
     }
 
-    .group {
-        border: none;
-    }
 
     .right0 {
         flex-direction: column;
 
     }
 
-    .right1 {
-        flex-direction: column;
-        height: fit-content;
-
-
-    }
-
+   
     .rightmain {
         height: fit-content;
         overflow-y: auto;
@@ -435,9 +458,11 @@ span {
 
     }
 
+  .header{
     .headerrightchild {
-        visibility: hidden;
-    }
+        display: none;
+      }
+  }
 
 
     .button {
@@ -594,6 +619,7 @@ span {
 .right1right {
 
     display: flex;
+    gap: 10px;
 }
 
 #searchbox {
@@ -603,7 +629,7 @@ span {
     border-radius: 20px;
     height: 30px;
     padding-left: 30px;
-    width: 200px;
+
 }
 
 #minileft {
