@@ -234,13 +234,13 @@ span {
     gap: 20px;
 }
 
-.right3 > div {
+.right3>div {
     background-color: white;
     border: solid 1px lightgray;
     border-radius: 4px;
     padding: 20px;
     display: flex;
-    
+
     gap: 10px;
 
 }
@@ -374,7 +374,7 @@ span {
         display: block;
     }
 
-   
+
 
     .button {
         display: none;
@@ -391,7 +391,7 @@ span {
     #headerhome {
         display: none;
     }
-    
+
     .right3childs1 {
         gap: 15px;
     }
@@ -404,7 +404,8 @@ span {
     .right1 {
         flex-direction: column;
         height: fit-content;
-        .group{
+
+        .group {
             border: none;
         }
 
@@ -423,7 +424,7 @@ span {
 
     }
 
-   
+
     .rightmain {
         height: fit-content;
         overflow-y: auto;
@@ -458,18 +459,18 @@ span {
 
     }
 
-  .header{
-    .headerrightchild {
-        display: none;
-      }
-  }
+    .header {
+        .headerrightchild {
+            display: none;
+        }
+    }
 
 
     .button {
         display: none;
     }
 
-    .date{
+    .date {
         padding-top: 10px;
         padding-right: 30px;
     }
