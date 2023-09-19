@@ -116,7 +116,7 @@ span {
     overflow-y: scroll;
     width: 20%;
     transition: 0.2s;
-    padding-left: 20px;
+    
 }
 
 #right {
@@ -169,7 +169,7 @@ span {
 }
 
 .right0 {
-    margin: 10px;
+    margin: 25px;
     background-color: #f8f9fb;
     display: flex;
     font-family: "Open Sans", sans-serif;
@@ -226,50 +226,52 @@ span {
     display: flex;
 }
 
-.right3 {
+.timeline {
     flex: 2;
     margin: 20px;
     display: flex;
     font-size: 12px;
     gap: 20px;
+    justify-content: space-between;
+    
 }
 
-.right3>div {
+.timeline-hr
+{
+    border: solid 5px #00d284;
+    width: 50%;
+}
+.timeline-details1
+{
+ display: flex;
+ justify-content: space-between;
+}
+
+
+.timelinechild1
+{
+    flex: 1;
     background-color: white;
     border: solid 1px lightgray;
     border-radius: 4px;
     padding: 20px;
     display: flex;
-
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 10px;
+   
+}
+.timeline-details {
+  
+    display: flex;
     gap: 10px;
 
-}
-
-.right4 {
-    flex: 1;
-    border: solid 1px white;
 
 }
 
-.right3child1 {
-    flex: 1;
-    border: 10px;
-    border-color: #f8f9fb;
-
-    display: flex;
-
-
-}
-
-.right3child2 {
-    flex: 1;
-    display: flex;
-
-
-}
 
 .timingdetails {
-    padding-left: 20px;
+  
     font-size: 16px;
 
 }
@@ -281,14 +283,14 @@ span {
 }
 
 .timingdetails2 {
-    padding-left: 20px;
+ 
     font-size: 12px;
     color: rgb(147, 142, 142);
 
 }
 
 .days {
-    padding-right: 20px;
+
     font-size: 14px;
     color: rgb(147, 142, 142);
 
@@ -313,9 +315,11 @@ span {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     font-size: large;
-    border-color: white;
     float: right;
+    position: relative;
     z-index: 1;
+    border: none;
+    color: white;
 
 }
 
@@ -343,6 +347,7 @@ span {
 .hover:hover {
 
     background-color: rgb(12, 12, 244);
+    color: white;
 }
 
 .close1 {
@@ -352,8 +357,6 @@ span {
 }
 
 .right2childs {
-    flex: 1;
-    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -363,6 +366,20 @@ span {
 
 @media screen and (max-width: 768px) {
 
+    
+    h4 
+    {
+        padding-left: 15px;
+    }
+
+    .right0child1
+    {
+        flex-direction: column;
+        align-items: normal;
+    }
+    #h3,#h6 {
+        padding: 0;
+    }
 
     .open1 {
         display: none;
@@ -392,10 +409,17 @@ span {
         display: none;
     }
 
-    .right3childs1 {
+    .timelinechilds1 {
         gap: 15px;
     }
 
+
+}
+@media screen and (max-width: 320px){
+.rightmain
+{
+    padding: 0;
+}
 
 }
 
@@ -430,22 +454,22 @@ span {
         overflow-y: auto;
     }
 
-    .right3 {
+    .timeline {
         flex-direction: column;
         height: fit-content;
         gap: 10px;
 
     }
 
-    .right3child0 {
+    .timelinechild0 {
         gap: 10px;
     }
 
-    .right3childs1 {
+    .timelinechilds1 {
         gap: 15px;
     }
 
-    .right3child2 {
+    .timelinechild2 {
         padding-top: 25px;
     }
 
@@ -478,7 +502,7 @@ span {
 
 }
 
-.right3childs {
+.timelinechilds {
     flex: 1;
     height: 100%;
     display: flex;
@@ -489,11 +513,11 @@ span {
     border-color: beige;
 }
 
-.right3childs1 {
+.timelinechilds1 {
     flex: 1;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 
 
 }
@@ -529,11 +553,16 @@ span {
     height: 30px;
 }
 
-.right3child0 {
-    display: flex;
-    flex-direction: column;
+.timelinechild0 {
     flex: 1;
-    justify-content: space-between;
+    background-color: white;
+    border: solid 1px lightgray;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+   flex-direction: column;
+    gap: 10px;
+    
 }
 
 .timedate {
@@ -547,10 +576,6 @@ span {
 
 }
 
-.right3child1 {
-    display: flex;
-    gap: 10px;
-}
 
 .headerright {
     display: flex;
@@ -581,20 +606,13 @@ span {
     font-size: 14px;
 }
 
-.right3childs2 {
+.timelinechilds2 {
     flex: 1;
-    height: 100%;
     display: flex;
-    gap: 1px;
+    
     justify-content: space-between;
-    align-items: center;
-    border: 10px;
-    border-color: beige;
 }
 
-.right3child22 {
-    padding-bottom: 10px;
-}
 
 .hiring {
     font-size: 18px;
@@ -624,12 +642,14 @@ span {
 }
 
 #searchbox {
-    margin-left: 7%;
     border: 0px;
     background-color: rgba(211, 211, 211, 0.299);
     border-radius: 20px;
     height: 30px;
-    padding-left: 30px;
+    padding-left:30px;
+    width: 75%;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -647,4 +667,10 @@ span {
 
 #imgresponse {
     display: none;
+}
+
+.timeline-heading
+{
+ display: flex;
+ justify-content: space-between;
 }
